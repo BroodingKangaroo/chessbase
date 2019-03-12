@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+  viewBox="0 0 70 70" width="70" height="70">
+  <defs>
+  <a href="#">
+    <path d="M16.34 26.81C16.34 37.85 25.3 46.81 36.34 46.81C47.38 46.81 56.34 37.85 56.34 26.81C56.34 15.77 47.38 6.81 36.34 6.81C25.3 6.81 16.34 15.77 16.34 26.81Z"
+      id="a4lQKwfPs"></path>
+    <path d="M35.79 14.19L37.25 14.19L37.25 37.98L35.79 37.98L35.79 14.19Z" id="aCip4SAag"></path>
+    <path d="M47.98 25.71L47.98 27.18L24.2 27.18L24.2 25.71L47.98 25.71Z" id="g2pMv7Pn6e"></path>
+ </a>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <g>
+          <filter id="shadow14192198" x="-96.66" y="-106.19" width="266" height="274" filterUnits="userSpaceOnUse"
+            primitiveUnits="userSpaceOnUse">
+            <feFlood></feFlood>
+            <feComposite in2="SourceAlpha" operator="in"></feComposite>
+            <feGaussianBlur stdDeviation="7.07"></feGaussianBlur>
+            <feOffset dx="0" dy="8" result="afterOffset"></feOffset>
+            <feFlood flood-color="#000000" flood-opacity="0.5"></feFlood>
+            <feComposite in2="afterOffset" operator="in"></feComposite>
+            <feMorphology operator="dilate" radius="0"></feMorphology>
+            <feComposite in2="SourceAlpha" operator="out"></feComposite>
+          </filter>
+          <path d="M16.34 26.81C16.34 37.85 25.3 46.81 36.34 46.81C47.38 46.81 56.34 37.85 56.34 26.81C56.34 15.77 47.38 6.81 36.34 6.81C25.3 6.81 16.34 15.77 16.34 26.81Z"
+            id="aMJGd4FNw" fill="white" fill-opacity="1" filter="url(#shadow14192198)"></path>
+        </g>
+        <use xlink:href="#a4lQKwfPs" opacity="1" fill="#ff7042" fill-opacity="1"></use>
+      </g>
+      <g>
+        <use xlink:href="#aCip4SAag" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+      </g>
+      <g>
+        <use xlink:href="#g2pMv7Pn6e" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+      </g>
+    </g>
+  </g>
+</svg>

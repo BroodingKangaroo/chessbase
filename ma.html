@@ -3,29 +3,102 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Рисуем шахматную доску в JS</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Chessbase</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
 </head>
 
 <body>
-  <div id="top" class="is2d">
-    <nav id="topmenu" class="">
-      <div id="button" class="menu">
+
+  <header>
+    <div class="container">
+      <div class="left-menu">
+
+        <a href="#">
+          <i class="fas fa-align-justify menu-item"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-portrait menu-item"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-palette menu-item"></i>
+        </a>
 
       </div>
-    </nav>
-    <div>
-      <a href="./menu">
-        <svg aria-hidden="true" data-prefix="fas" width=40px height=40px data-icon="align-justify" class="svg-inline--fa fa-align-justify fa-w-14"
-          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path id="facebook" fill="#AAAAAA" d="M0 84V44c0-8.837 7.163-16 16-16h416c8.837 0 16 7.163 16 16v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16zm16 144h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 256h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0-128h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-        </svg>
-      </a>
+      <div class="right-menu">
+        <div class="plus-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+            <a href="#">
+              <defs>
+
+                <path d="M16.34 26.81C16.34 37.85 25.3 46.81 36.34 46.81C47.38 46.81 56.34 37.85 56.34 26.81C56.34 15.77 47.38 6.81 36.34 6.81C25.3 6.81 16.34 15.77 16.34 26.81Z"
+                  id="a4lQKwfPs"></path>
+                <path d="M35.79 14.19L37.25 14.19L37.25 37.98L35.79 37.98L35.79 14.19Z" id="aCip4SAag"></path>
+                <path d="M47.98 25.71L47.98 27.18L24.2 27.18L24.2 25.71L47.98 25.71Z" id="g2pMv7Pn6e"></path>
+              </defs>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <filter id="shadow14192198" x="-96.66" y="-106.19" width="266" height="274" filterUnits="userSpaceOnUse"
+                        primitiveUnits="userSpaceOnUse">
+                        <feFlood></feFlood>
+                        <feComposite in2="SourceAlpha" operator="in"></feComposite>
+                        <feGaussianBlur stdDeviation="7.07"></feGaussianBlur>
+                        <feOffset dx="0" dy="8" result="afterOffset"></feOffset>
+                        <feFlood flood-color="#000000" flood-opacity="0.5"></feFlood>
+                        <feComposite in2="afterOffset" operator="in"></feComposite>
+                        <feMorphology operator="dilate" radius="0"></feMorphology>
+                        <feComposite in2="SourceAlpha" operator="out"></feComposite>
+                      </filter>
+                      <path d="M16.34 26.81C16.34 37.85 25.3 46.81 36.34 46.81C47.38 46.81 56.34 37.85 56.34 26.81C56.34 15.77 47.38 6.81 36.34 6.81C25.3 6.81 16.34 15.77 16.34 26.81Z"
+                        id="aMJGd4FNw" fill="white" fill-opacity="1" filter="url(#shadow14192198)"></path>
+                    </g>
+                    <use class="for-hover" xlink:href="#a4lQKwfPs" opacity="1" fill="#ff7042" fill-opacity="1"></use>
+                  </g>
+                  <g>
+                    <use xlink:href="#aCip4SAag" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+                  </g>
+                  <g>
+                    <use xlink:href="#g2pMv7Pn6e" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+                  </g>
+                </g>
+              </g>
+            </a>
+          </svg>
+        </div>
+        <div class="user-profile">
+          <div id="rectangle">
+            <div id="circle">
+            </div>
+            <div id="profile-name">
+              Joe Doe
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
+  </header>
 
-    <div class="main-block"></div>
-    <script src="script.js"></script>
 
+
+  <section id="main">
+    <div class="container">
+
+      <div class="main-block"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  height: 60px;
+  margin: 35px 0 5px 3%;
+}
+
+.left-menu {
+  margin-left:10%;
+  margin-top: 8px;
+  height: 100%;
+  float: left;
+}
+
+.right-menu {
+  float: right;
+  width: 29%;
+  height: 60px;
+  margin-right: 1%;
+}
+
+.user-profile {
+  height: 40px;
+  width: 75%;
+  float: right;
+  margin: 9px 2% 0 0;
+}
+
+#rectangle {
+  width: 90%;
+  height: 90%;
+  background: #EBEBEB;
+  border-radius: 15px / 15px;
+  display: flex;
+}
+
+#circle {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #929292;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+#profile-name {
+  width: 60%;
+  height: 50%;
+  text-align: center;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.plus-button {
+  float: left;
+  margin: 0;
+}
+@media screen and (max-width: 1090px) {
+  .right-menu{
+    width: 310px;
+  } 
+}
+ @media only screen and(max-width:10000px) 
+ {
+   header{
+     border:1px solid red;
+   }
+   
+ }
+
+.main-block {
+  width: 560px;
+  height: 560px;
+  margin: 10px auto;
+  border: 1px solid #929292;
+}
+
+
+
+.for-hover:hover {
+  fill: #AAAAAA;
+  transition: all ease 0.3s;
+}
+
+.block {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+.gray {
+  background: #EBEBEB;
+}
+
+.white {
+  background: #fff;
+}
+
+.menu-item {
+  font-size: 30px;
+  margin: 5px 10px 5px;
+  color: #AAAAAA;
+  fill: #AAAAAA;
+}
+
+.menu-item:hover {
+  fill: orange;
+}
+
+
+
+
+
+a .menu-item:hover {
+  color: #FF7042;
+}
+
+a .menu-item {
+  transition: 100ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+a {
+  outline: none;
+  border: 0;
+  text-decoration: none;
+}
