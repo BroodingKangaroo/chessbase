@@ -1,3 +1,7 @@
+<?php
+echo $_COOKIE['push']; 
+setcookie("push", null, 0, "/");  
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +33,7 @@
       <div class="right-menu">
         <div class="plus-button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
-            <a href="#">
+            <a href="/login.php" target="_blank">
               <defs>
 
                 <path
@@ -255,14 +259,14 @@
               </tbody>
             </table>
           </div>
-          <p><span id="chessDivIdSpan" style="color:green">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0
-              1</span></p>
+          <p><textarea style="width: 535px;" id="chessDivIdSpan" style="color:green">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</textarea></p>
+          <br>
           <input id="chessUndoId" type="button" value="Отменить ход" disabled="">
           <input name="btnSetFen" type="button" value="Задать FEN"
             onclick="SetFen('chessDivId', 'chessUndoId', 'notId')">
-          <input type="submit" value="Сброс">
+          <a href="/"><input type="button" value="Сброс"></a>
         </div>
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="700" bgcolor="#CCCCCC">
+        <table  style="visibility: hidden; position: fixed;" cellspacing="0" cellpadding="0" border="0" align="center" width="700" bgcolor="#CCCCCC">
           <tbody>
             <tr>
               <td>
@@ -288,7 +292,6 @@
     </div>
   </footer>
 
-  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
