@@ -160,13 +160,16 @@ fieldset {
     font: bold 15px Arial, Helvetica;
     color: #8f5a0a;
 }
-.reg-submit{
+
+.reg-submit {
     width: 200px !important;
     margin-left: 25% !important;
 }
-.reg-login{
-    height: 400px !important; 
+
+.reg-login {
+    height: 400px !important;
 }
+
 .submit:hover,
 .submit:focus {
     background-color: #fddb6f;

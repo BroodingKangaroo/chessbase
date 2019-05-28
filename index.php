@@ -1,4 +1,5 @@
 <?php
+include 'send.php';
 echo $_COOKIE['push']; 
 setcookie("push", null, 0, "/");  
  ?>
@@ -259,8 +260,20 @@ setcookie("push", null, 0, "/");
               </tbody>
             </table>
           </div>
-          <p><textarea style="width: 535px;" id="chessDivIdSpan" style="color:green">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</textarea></p>
+          
+          <div style="width: 650px;
+    max-height: 150px;
+    overflow: auto;"> <?php include 'echo.php'; ?> </div>
+          
+          
+          <form action="send.php" method="get">
+              
+              
+          <p><textarea style="width: 535px;" id="chessDivIdSpan" name="code" style="color:green">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</textarea></p>
           <br>
+           <input type="submit" name="batton_send" value="Сохранить">
+           </form>
+
           <input id="chessUndoId" type="button" value="Отменить ход" disabled="">
           <input name="btnSetFen" type="button" value="Задать FEN"
             onclick="SetFen('chessDivId', 'chessUndoId', 'notId')">
